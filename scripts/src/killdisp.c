@@ -14,7 +14,7 @@ void main()
     system("xrandr --output VIRTUAL --off");
     
     printf("killing screenclone\n");
-    system("pkill screenclone");
+    system("pkill intel-virtual-output");
     
     printf("killing X server...\n");
     printf("running X servers are:\n");

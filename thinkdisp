@@ -234,7 +234,7 @@ class ThinkDisp:
                                "--"+str(self.SETTINGS["SIDE"])+"-of", "LVDS1"])
 		#YOU MUST HAVE screenclone in /usr/bin/
         time.sleep(1)
-        subprocess.Popen(["screenclone", "-d", ":8", "-x", "1"])
+        subprocess.Popen(["intel-virtual-output"])
         self.status_check(0)
 
     def kill_disp(self, widget):
