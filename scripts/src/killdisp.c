@@ -11,7 +11,7 @@ void main()
     setuid(0);
     printf("WARNING: must run as root, else you'll get a segfault\n");
     printf("turning off display\n");
-    system("xrandr --output VIRTUAL --off");
+    system("xrandr --output VIRTUAL1 --off");
     
     printf("killing screenclone\n");
     system("pkill intel-virtual-output");

@@ -229,7 +229,7 @@ class ThinkDisp:
         subprocess.Popen(["optirun", "true"])
         time.sleep(1)
         subprocess.Popen(["xrandr", "--output", "LVDS1", "--auto", "--output", 
-                         "VIRTUAL", "--mode", str(self.SETTINGS["RESOLUTION"]),
+                         "VIRTUAL1", "--mode", str(self.SETTINGS["RESOLUTION"]),
                          "--rotate", str(self.SETTINGS["ROTATION"]), 
                                "--"+str(self.SETTINGS["SIDE"])+"-of", "LVDS1"])
 		#YOU MUST HAVE screenclone in /usr/bin/
